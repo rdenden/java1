@@ -1,4 +1,4 @@
-public class Main2_3 {
+public class Main {
 	public static void main(String[] args) {
 	   String ans = "x+yは" + z;
 	   System.out.println(ans);
