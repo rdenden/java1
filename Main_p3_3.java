@@ -1,4 +1,4 @@
-public class Main {
+public class Main_p3_3 {
 	public static void main(String[] args) {
 	    int isHungry = 1;
 	    String food = "餃子";

@@ -1,4 +1,4 @@
-public class Main {
+public class Main3_1 {
 	public static void main(String[] args) {
         boolean tenki = true;
         if (tenki == true) {　//かっこ省略不可（二行だから）
