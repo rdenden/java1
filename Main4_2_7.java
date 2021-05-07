@@ -1,4 +1,4 @@
-public class Main {
+public class Main4_2_7 {
     public static void main(String[] args) {
         int [] scores = new int[5];
         int num = scores.length;

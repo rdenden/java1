@@ -1,4 +1,4 @@
-public class Main {
+public class Main4_10 {
     public static void main(String[] args) {
         int [] scores = {20,30,40,50,80};
         int sum = 0;

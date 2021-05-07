@@ -1,4 +1,4 @@
-public class Main {
+public class Main3_4 {
 	public static void main(String[] args) {
 	    System.out.println("あなたの運勢を占います");
 	    int fortune = new java.util.Random().nextInt(4) + 1; 
