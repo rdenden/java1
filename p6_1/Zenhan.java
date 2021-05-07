@@ -1,9 +1,9 @@
-import comment.Zenhan;
-public class Main {
-  public static void main(String[] args) throws Exception {
-    Zenhan.doWarusa();
-    Zenhan.doTogame();
-    comment.Kouhan.callDeae();
-    comment.Kouhan.showMondokoro();
-  }
+package comment;
+public class Zenhan {
+    public static void doWarusa() {
+        System.out.println("きなこでござる。食えませんがの。");
+    }
+    public static void doTogame() {
+        System.out.println("この老いぼれの目はごまかせませんぞ。");
+    }
 }
