@@ -3,8 +3,8 @@ public class Hero {
     int hp;
     Sword sword;
     
-    public void attack() {
-        System.out.println(this.name + "は" +  "で攻撃した！");
+    public void attack(String sword) {
+        System.out.println(this.name + "は" + sword + "で攻撃した！");
         System.out.println("敵に５ポイントのダメージを与えた！");
     }
 }
