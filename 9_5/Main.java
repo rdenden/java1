@@ -12,8 +12,6 @@ public class Main {
         w.hp = 50;
         w.heal(h1);
         w.heal(h2);
-        w.heal(h2);
-        
-    }
-    
+        w.heal(h2);     
+    }    
 }
