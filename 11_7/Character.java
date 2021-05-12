@@ -1,4 +1,6 @@
-public class Character {
+// 抽象クラスの宣言
+// newによるインスタンス化が禁止される
+public abstract class Character {
     String name;
     int hp;
     
