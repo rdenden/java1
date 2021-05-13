@@ -2,7 +2,7 @@ public class Wand {
     private String name;
     private double power;
     
-     public String getName {
+    public String getName {
         return this.name;
     }
     public void setName(String name) {
