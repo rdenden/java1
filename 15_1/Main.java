@@ -10,5 +10,8 @@ public class Main {
 	        System.out.println("s2とs2はケースを区別しなければ等しい");
 	    }
 	    System.out.println("s1の長さは" + s1.length() + "です");
+	    if (s1.isEmpty()) {
+	        System.out.println("s1は空文字です");
+	    }
 	}
 }
