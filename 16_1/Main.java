@@ -9,6 +9,15 @@ public class Main {
 	    for (int i : points) {
 	        System.out.println(i);
 	    }
-	    System.out.println(points);
+	  System.out.println(points);
+
+// 以下手動でオブジェクトに変換
+
+// IntegerクラスのvalueOfメソッドでインスタンス生成
+    Integer i1 = Integer.valueOf(16);
+// intValueメソッドでint型のプリミティブ値を取り出す。
+    int i2 = il.intValue();
 	}
 }
+
+
