@@ -12,5 +12,13 @@ public class Main {
         for (Hero h: heroes) {
             System.out.println(h.getName());
         }
+        
+        Map<Hero,Integer> ene = new HashMap<>();
+        ene.put(a,3);
+        ene.put(b,7);
+        for (Hero key : ene.keySet()) {
+            int value = ene.get(key);
+            System.out.println(key.getName() + "が倒した敵＝" + value);
+        }
 	}
 }
