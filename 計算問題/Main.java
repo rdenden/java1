@@ -5,12 +5,27 @@ public class Main {
 	    Scanner sc = new Scanner(System.in);
 	    Introduction i = new Introduction();
 	    i.questionSelect();
-	    int questionSelectNumber = sc.nextInt();
-	    i.levelSelect();
+	    Question q1;
+	    int questionSelectNumber;
+	    while (true) {
+	        questionSelectNumber = sc.nextInt();
+	        if (questionSelectNumber == 1) {
+	            q1 = (Addition)new Addition();
+	            break;
+	        } else if (questionSelectNumber == 2) {
+	            q1 = (Subtraction)new Subtraction();
+	            break;
+	        } else {
+	            System.out.println("入力した値が正しくありません");
+	            System.out.println("選択肢の番号を入力してください");
+	        }
+	    }
+	    
+	    
+	    
+	    q1.levelSelect();
 	    int levelSelectNumber = sc.nextInt();
-	    if (questionSelectNumber == 1) {
-	        Addition q1 = new Addition();
-	        q1.question();
-	    } 
+	   // QuestionMaker question1 = new QuestionMaker(questionSelectNumber,levelSelectNumber)
+	    
 	}
 }
