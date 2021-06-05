@@ -5,15 +5,15 @@ public class Main {
 	    Scanner sc = new Scanner(System.in);
 	    Introduction i = new Introduction();
 	    i.questionSelect();
-	    Question q1;
+	   
 	    int questionSelectNumber;
+	    Addition a1 = new Addition();
+	    Subtraction s1 = new Subtraction();
 	    while (true) {
 	        questionSelectNumber = sc.nextInt();
 	        if (questionSelectNumber == 1) {
-	            q1 = (Addition)new Addition();
 	            break;
 	        } else if (questionSelectNumber == 2) {
-	            q1 = (Subtraction)new Subtraction();
 	            break;
 	        } else {
 	            System.out.println("入力した値が正しくありません");
@@ -22,10 +22,29 @@ public class Main {
 	    }
 	    
 	    
-	    
-	    q1.levelSelect();
-	    int levelSelectNumber = sc.nextInt();
-	   // QuestionMaker question1 = new QuestionMaker(questionSelectNumber,levelSelectNumber)
-	    
+	    if (questionSelectNumber == 1) {
+	        a1.levelSelect();
+	        int levelSelectNumber = sc.nextInt();
+	        int correct = a1.questionMake(levelSelectNumber);
+	        int answer = sc.nextInt();
+	        if (correct == answer) {
+	            System.out.println("正解！");
+	        } else {
+	            System.out.println("不正解。");
+	            System.out.println("正解は" + correct + "です。");
+	        }
+	    }
+	    if (questionSelectNumber == 2) {
+	        s1.levelSelect();
+	        int levelSelectNumber = sc.nextInt();
+	        int correct = s1.questionMake(levelSelectNumber);
+	        int answer = sc.nextInt();
+	        if (correct == answer) {
+	            System.out.println("正解！");
+	        } else {
+	            System.out.println("不正解。");
+	            System.out.println("正解は" + correct + "です。");
+	        }
+	    }
 	}
 }
